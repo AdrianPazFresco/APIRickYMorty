@@ -5,19 +5,23 @@ function crearFicha(personaje) {
         foto.alt = "Foto del personaje";
         const nombre = document.createElement("p");
         nombre.textContent = personaje.name;
+        nombre.classList.add("nombre");
         const id = document.createElement("p");
         id.textContent = personaje.id;
+        id.classList.add("id");
         const estado = document.createElement("p");
         estado.textContent = personaje.status;
         estado.classList.add(personaje.status);
         const especie = document.createElement("p");
         especie.textContent = `${personaje.species} - ${personaje.gender}`;
+        const tipo = document.createElement("p");
+        tipo.textContent = personaje.type;
         const origen = document.createElement("a");
         origen.textContent = personaje.origin.name;
         origen.href= personaje.origin.url;
         const ficha = document.createElement("div");
-        ficha.append(foto, nombre, id, estado, especie, origen);
-        console.log(estado);
+        ficha.append(foto, nombre, id, estado, especie, tipo, origen);
+        console.log(tipo);
         return ficha
 }
 
