@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+.fichas {
+    gap: 1rem;
+    
+}
+
+.fichas > div {
+    text-align: center;
+    background-color: aqua;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+img {
+    border-radius: 50%;
+}
+.Alive {
+    color:green;
+}
+
+.Dead {
+    color: red;
+}
+
+.unknown {
+    color: gray;
+}
